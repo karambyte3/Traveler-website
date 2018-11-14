@@ -1,0 +1,235 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.centered-container {
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    font-size: 25px;
+    padding: 15px;
+    font-family: 'Poiret One', cursive;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    font-weight: bolder;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    position: fixed;
+    transition: all 0.5s;
+}
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.headerBackground {
+    background-image: url("heading.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.headerText {
+    padding: 200px 20px 0px 20px;
+    text-align: center;
+}
+
+.headerText h1 {
+    font-family: 'Poiret One', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bolder;
+    opacity: 0.8;
+}
+
+.headerText a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    font-size: 25px;
+    padding: 15px;
+    font-family: 'Poiret One', cursive;
+    transition: 0.5s;
+    /* box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.658); */
+    letter-spacing: 1px;
+    border-radius: 100px;
+    font-weight: bolder;
+}
+
+.headerText a:hover {
+    color: white;
+    border-color: rgba(255, 255, 255);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.363);
+}
+
+.navbar-fixed-top.scrolled {
+    /* background-color: rgb(165, 0, 91) !important; */
+    transition: all 1s;
+    z-index: 100;
+    background-image: url("heading.jpg") !important;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(2, 85, 158);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 24px;
+}
+
+.card p {
+    margin: auto;
+    width: 250px;
+    padding-top: 1110px;
+    transition: all 2s;
+}
+
+
+.card:hover .cardImg {
+    transform: scale(1.08);
+    transition: all 0.3s;
+    font-family: 'Poiret One', cursive;
+}
+
+.card p {
+    margin: auto;
+    width: 250px;
+    padding-top: 1110px;
+    transition: all 2s;
+}
+
+.card:hover p {
+    padding-top: 60%;
+    transition: 0.3s;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 40px;
+}
+
+.cardBtn {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    padding: 15px;
+    font-family: 'Poiret One', cursive;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 100px;
+    font-weight: bolder;
+}
+
+.cardBtn:hover {
+    color: white;
+    border-color: rgba(255, 255, 255);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.363);
+}
+
+.cardBottomText {
+    height: 100%;
+    width: 350px;
+    display: inline-block;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.144);
+    margin: 30px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.cardBottomText h1 {
+    width: 80%;
+    float: left;
+    color: #7F8C8D;
+    font-weight: 300;
+    font-size: 1.4em;
+    margin: 0 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eeeeee;
+    text-align: left;
+    padding: 10px 20px;
+    font-family: 'Poiret One', cursive;
+}
+
+.cardBottomText p {
+    display: inline-block;
+    color: rgb(127, 140, 141);
+    padding: 0 15px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+
+.cardBottomText:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.363);
+    transition: 0.3s;
+}
+
+footer {
+    width: 100%;
+    background-image: url('media/footer/footerbg.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+#upper {
+    height: 200px;
+    /* background-color: gray; */
+    background-color: rgb(39, 39, 39) !important;
+    opacity: 0.8;
+}
+
+#down {
+    height: 70px;
+    background-color: rgba(139, 15, 32, 0.945) !important;
+    opacity: 0.8;
+}
