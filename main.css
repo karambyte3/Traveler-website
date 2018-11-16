@@ -1,8 +1,20 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+}
+
+.goToTop img {
+    width: 40px;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: 50px;
+    z-index: 200;
+    opacity: 0.5;
 }
 
 .wrapper {
@@ -55,7 +67,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 20px;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
@@ -105,14 +117,14 @@ nav a {
 }
 
 .navbar-fixed-top.scrolled {
-    /* background-color: rgb(165, 0, 91) !important; */
+    background-color: rgb(165, 0, 91) !important;
     transition: all 1s;
     z-index: 100;
-    background-image: url("heading.jpg") !important;
+    /* background-image: url("heading.jpg") !important; */
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
 .card {
     width: 300px;
@@ -214,22 +226,158 @@ nav a {
     transition: 0.3s;
 }
 
+.customers {
+    width: 100%;
+    height: 450px;
+    background-image: url('heading.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.customerCard {
+    width: 200px;
+    height: 370px;
+    display: inline-block;
+    margin: 0 50px;
+    border-radius: 150px 150px 50px 50px;
+    transition: all 0.5s;
+    color: rgb(204, 204, 204);
+    opacity: 0.9;
+}
+
+.customersImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.customerCard h1 {
+    margin: 0px 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.74);
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.customerCard p {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.customerCard:hover {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+
+
+/* FOOTER CSS */
+
 footer {
     width: 100%;
-    background-image: url('media/footer/footerbg.jpg');
+    background-image: url('heading.jpg');
     background-position: bottom;
     background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
 }
 
 #upper {
-    height: 200px;
-    /* background-color: gray; */
+    height: 220px;
     background-color: rgb(39, 39, 39) !important;
-    opacity: 0.8;
+    opacity: 0.5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#upper img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+#upper ul {
+    padding: 0;
+}
+
+#upper ul li {
+    text-align: center;
+    list-style: none;
+    display: inline;
+    margin: 0 5px;
+}
+
+#upper p {
+    margin: 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+#upper a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+#foot a {
+    font-size: 13px;
+    border-left: 2px solid white;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+#foot a:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
 }
 
 #down {
     height: 70px;
     background-color: rgba(139, 15, 32, 0.945) !important;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+#down {
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#down h3, a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+}
+
+#down a {
+    padding: 3px 10px;
+    transition: 0.4s;
+    border-radius: 1000px;
+    background-color: rgb(90, 12, 22);
+    white-space: nowrap;
+    line-height: 40px;    
+}
+
+#down a:hover {
+    background-color: white;
+    transition: 0.4s;
+    color: rgb(39, 39, 39);
 }
