@@ -12,6 +12,7 @@ $(window).scroll(function() {
         $('.goToTop').fadeOut(200);   
     }
 });
+
 $('.goToTop').click(function() {      
     $('body,html').animate({
         scrollTop : 0                      

@@ -4,6 +4,7 @@ html {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .goToTop img {
@@ -18,8 +19,11 @@ html {
 }
 
 .wrapper {
-    width: 700px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left:  50px;
 }
 
 .centered-container {
@@ -39,6 +43,41 @@ html {
     border-radius: 100px;
     font-weight: bolder;
 }
+
+.con-title {
+    text-align: center;
+    border-bottom: 3px solid rgb(165, 0, 91);
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poiret One', cursive;
+    color: rgb(165, 0, 91);
+    width: 500px;
+    word-wrap: break-word;
+}
+
+.simpleP {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(66, 0, 36);
+    font-size: 18px;
+    width: 100%;
+    margin: 10px;
+}
+
+.p-left {
+    text-align: left;
+}
+
+.p-right {
+    text-align: right;
+}
+
+.p-border {
+    border-left: 3px solid rgba(165, 0, 91, 0.938);
+    padding: 10px 20px;
+}
+
+/* HEADER */
 
 header {
     width: 100%;
@@ -67,10 +106,16 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.795);
     font-size: 20px;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+
+}
+
+nav a:hover {
+    color: white;
 }
 
 .headerBackground {
@@ -125,6 +170,8 @@ nav a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* SIMPLE CARD */
 
 .card {
     width: 300px;
@@ -188,6 +235,8 @@ nav a {
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.363);
 }
 
+/* CARD WITH TEXT ON BOTTOM */
+
 .cardBottomText {
     height: 100%;
     width: 350px;
@@ -228,7 +277,7 @@ nav a {
 
 .customers {
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-image: url('heading.jpg');
     background-position: center;
     background-size: cover;
@@ -239,21 +288,37 @@ nav a {
     flex-direction: column;
 }
 
+.customerReview {
+    color: white;
+    font-family: 'Poiret One', cursive;
+    border-bottom: 2px solid white;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
 .customerCard {
     width: 200px;
     height: 370px;
     display: inline-block;
     margin: 0 50px;
-    border-radius: 150px 150px 50px 50px;
+    border-radius: 14px;
     transition: all 0.5s;
     color: rgb(204, 204, 204);
     opacity: 0.9;
 }
 
+
+
 .customersImg {
     width: 100%;
     height: 200px;
-    border-radius: 5px;
+    border-radius: 14px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+
 }
 
 .customerCard h1 {
@@ -274,6 +339,7 @@ nav a {
 .customerCard:hover {
     color: rgb(255, 255, 255);
     opacity: 1;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.356);
 }
 
 
@@ -359,7 +425,8 @@ footer {
     flex-direction: column;
 }
 
-#down h3, a{
+#down h3,
+a {
     text-decoration: none;
     color: white;
     font-family: 'Quicksand', sans-serif;
@@ -373,7 +440,7 @@ footer {
     border-radius: 1000px;
     background-color: rgb(90, 12, 22);
     white-space: nowrap;
-    line-height: 40px;    
+    line-height: 40px;
 }
 
 #down a:hover {
