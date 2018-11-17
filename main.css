@@ -46,7 +46,7 @@ html {
 
 .con-title {
     text-align: center;
-    border-bottom: 3px solid rgb(165, 0, 91);
+    border-bottom: 3px solid rgba(165, 0, 91, 0.432);
     margin: 0 auto;
     padding: 20px;
     font-family: 'Poiret One', cursive;
@@ -75,7 +75,25 @@ html {
 .p-border {
     border-left: 3px solid rgba(165, 0, 91, 0.938);
     padding: 10px 20px;
+    width: 92%;
 }
+
+.p-title {
+    color: rgb(165, 0, 91);
+    font-family: 'Poiret One', cursive;
+}
+
+.simple-list {
+    width: 80%;
+    list-style-type: circle;
+    color: rgb(165, 0, 91);
+}
+
+.simple-list li {
+    color: rgba(80, 0, 44, 0.938);
+    font-size: 16px;
+}
+
 
 /* HEADER */
 
