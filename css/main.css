@@ -97,6 +97,21 @@ html {
 
 /* HEADER */
 
+.hamburger {
+    right: 5%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    position: fixed;
+    z-index: 2200;
+    margin-right: 10px;
+}
+
+.icon {
+	display: none;
+}
+
 header {
     width: 100%;
     height: 100%;
@@ -155,6 +170,7 @@ nav a:hover {
     color: rgb(255, 255, 255);
     font-size: 50px;
     font-weight: bolder;
+    z-index: -100;
     opacity: 0.8;
 }
 
@@ -371,7 +387,7 @@ footer {
 #upper {
     height: 220px;
     background-color: rgb(39, 39, 39) !important;
-    opacity: 0.5;
+    opacity: 0.8;
     padding: 10px;
     display: flex;
     justify-content: center;
